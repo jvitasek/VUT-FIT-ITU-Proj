@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Recenzní systém | ITU</title>
+	<meta charset="utf8" />
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<section class="header">
+		<!-- 		
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Action <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Tým</a></li>
+			  </ul>
+			</div>
+			-->
+			<!-- Team search -->
+			<input type="text" name="team" id="team-search" placeholder="Hledat tým /xloginYY/" />
+			<!-- /Team search -->
+		</section>
+		<!-- Team toggle  -->
+		<div id="content-1">
+			<div class="btn-group invis" data-toggle="buttons">
+			  <label class="btn btn-primary label-member" id="label-member1">
+			    <input class="member-choice" id="member-choice-1" type="radio" name="options" autocomplete="off"> Název 1
+			  </label>
+			  <label class="btn btn-primary label-member" id="label-member2">
+			    <input class="member-choice" id="member-choice-2" type="radio" name="options" autocomplete="off"> Název 2
+			  </label>
+			  <label class="btn btn-primary label-member" id="label-member3">
+			    <input class="member-choice" id="member-choice-3" type="radio" name="options" autocomplete="off"> Název 3
+			  </label>
+			  <span class="review-num">Recenzí: <span id="member-reviews">0</span></span>
+			</div>
+			<div>
+				<div class="links" id="links-1"><a href="" id="member-1-pdf-1" target="_blank"><button class="pdf">TZ1</button></a><a href="" id="member-1-pdf-2" target="_blank"><button class="pdf">TZ2</button></a><a href="" id="member-1-pdf-3" target="_blank"><button class="pdf">TZ3</button></a></div>
+				<div class="links" id="links-2"><a href="" id="member-2-pdf-1" target="_blank"><button class="pdf">TZ1</button></a><a href="" id="member-2-pdf-2" target="_blank"><button class="pdf">TZ2</button></a><a href="" id="member-2-pdf-3" target="_blank"><button class="pdf">TZ3</button></a></div>
+				<div class="links" id="links-3"><a href="" id="member-3-pdf-1" target="_blank"><button class="pdf">TZ1</button></a><a href="" id="member-3-pdf-2" target="_blank"><button class="pdf">TZ2</button></a><a href="" id="member-3-pdf-3" target="_blank"><button class="pdf">TZ3</button></a></div>
+			</div>
+		</div>
+		<div id="content-2">
+			<!-- /Team toggle -->
+			<article class="member-data">
+				<div class="col-md-6">
+					<h3 id="reviewee-1">Recenzent 1</h3>
+					<ul class="final-reviewee">
+						<li id="final-kvalita-1">3</li> <!-- KVALITA -->
+						<li id="final-mnozstvi-1">4</li> <!-- MNOZSTVI -->
+						<li id="final-celkove-1">1</li> <!-- CELKOVE -->
+					</ul>
+					<div class="rating">
+						<label class="desc">Cíle a studium</label>
+						<ul>
+							<li id="stud-cile-1">3</li>
+							<li id="stud-uziv-1">4</li>
+							<li id="stud-navrh-1">1</li>
+							<li id="stud-testovani-1">6</li>
+							<li id="stud-literatura-1">7</li>
+							<li id="stud-exist-1">3</li>
+						</ul>
+						<textarea id="stud-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Návrh a zprac.</label>
+						<ul>
+							<li id="navrh-gui-1">2</li>
+							<li id="navrh-varianty-1">9</li>
+							<li id="navrh-testovani-1">2</li>
+							<li id="navrh-pilot-1">6</li>
+						</ul>
+						<textarea id="navrh-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Realizace</label>
+						<ul>
+							<li id="impl-tech-1">1</li>
+							<li id="impl-be-api-1">4</li>
+						</ul>
+					</div>
+					<div class="rating">
+						<label class="desc">Obsah</label>
+						<ul>
+							<li id="obsah-1">2</li>
+						</ul>
+						<textarea id="obsah-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Jazyk</label>
+						<ul>
+							<li id="jazyk-1">2</li>
+						</ul>
+						<textarea id="jazyk-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Zaměření</label>
+						<ul>
+							<li id="zamereni-1">2</li>
+						</ul>
+						<textarea id="zamereni-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Technická úroveň</label>
+						<ul>
+							<li id="tech-ur-1">2</li>
+						</ul>
+						<textarea id="tech-ur-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Testování</label>
+						<ul>
+							<li id="testovani-1">2</li>
+						</ul>
+						<textarea id="testovani-doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<textarea id="doporuceni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<!-- SEPARATOR -->
+					<div class="rating">
+						<label class="desc">Vyjádření</label>
+						<ul>
+							<li id="rec-kvalita-1">2</li>
+							<li id="rec-prinos-1">2</li>
+							<li id="rec-souhlas-1">2</li>
+						</ul>
+						<textarea id="rec-vyjadreni-1" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3 id="reviewee-2">Recenzent 2</h3>
+					<ul class="final-reviewee">
+						<li id="final-kvalita-2">3</li> <!-- KVALITA -->
+						<li id="final-mnozstvi-2">4</li> <!-- MNOZSTVI -->
+						<li id="final-celkove-2">1</li> <!-- CELKOVE -->
+					</ul>
+					<div class="rating">
+						<label class="desc">Cíle a studium</label>
+						<ul>
+							<li id="stud-cile-2">8</li>
+							<li id="stud-uziv-2">7</li>
+							<li id="stud-navrh-2">5</li>
+							<li id="stud-testovani-2">2</li>
+							<li id="stud-literatura-2">3</li>
+							<li id="stud-exist-2">3</li>
+						</ul>
+						<textarea id="stud-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Návrh a zprac.</label>
+						<ul>
+							<li id="navrh-gui-2">10</li>
+							<li id="navrh-varianty-2">10</li>
+							<li id="navrh-testovani-2">10</li>
+							<li id="navrh-pilot-2">4</li>
+						</ul>
+						<textarea id="navrh-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Realizace</label>
+						<ul>
+							<li id="impl-tech-2">2</li>
+							<li id="impl-be-api-2">1</li>
+						</ul>
+					</div>
+					<div class="rating">
+						<label class="desc">Obsah</label>
+						<ul>
+							<li id="obsah-2">2</li>
+						</ul>
+						<textarea id="obsah-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Jazyk</label>
+						<ul>
+							<li id="jazyk-2">2</li>
+						</ul>
+						<textarea id="jazyk-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Zaměření</label>
+						<ul>
+							<li id="zamereni-2">2</li>
+						</ul>
+						<textarea id="zamereni-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Technická úroveň</label>
+						<ul>
+							<li id="tech-ur-2">2</li>
+						</ul>
+						<textarea id="tech-ur-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<label class="desc">Testování</label>
+						<ul>
+							<li id="testovani-2">2</li>
+						</ul>
+						<textarea id="testovani-doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<div class="rating">
+						<textarea id="doporuceni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+					<!-- SEPARATOR -->
+					<div class="rating">
+						<label class="desc">Vyjádření</label>
+						<ul>
+							<li id="rec-kvalita-2">2</li>
+							<li id="rec-prinos-2">2</li>
+							<li id="rec-souhlas-2">2</li>
+						</ul>
+						<textarea id="rec-vyjadreni-2" class="area-doporuceni">Doporuceni...</textarea>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
